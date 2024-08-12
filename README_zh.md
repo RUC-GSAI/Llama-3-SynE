@@ -1,19 +1,66 @@
-# Llama-3-SynE
+<!-- ---
+language:
+- en
+- zh
+datasets:
+- survivi/Llama-3-SynE-Dataset
+library_name: transformers
+pipeline_tag: text-generation
+--- -->
 
-<div align="center">
-<img src="./assets/llama-3-syne-logo.png" width="200"/>
-</div>
+<!-- ---
+language:
+- en
+- zh
+task_categories:
+- text-generation
+--- -->
 
 <p align="center">
- 📄<a href="https://arxiv.org/abs/2407.18743" target="_blank"> 报告 </a> • 🤗 <a href="https://huggingface.co/survivi/Llama-3-SynE" target="_blank">Hugging Face 仓库</a>
+  <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/llama-3-syne-logo.png" width="400"/>
 </p>
 
 <p align="center">
- 🔍<a href="README.md" target="_blank">English</a>
+ 📄 <a href="https://arxiv.org/abs/2407.18743"> 报告 </a>&nbsp | &nbsp 🤗 <a href="https://huggingface.co/survivi/Llama-3-SynE">Hugging Face 上的模型</a>&nbsp | &nbsp 📊 <a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset">继续预训练数据集</a>
 </p>
+
+<p align="center">
+ 🔍 <a href="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/README.md">English</a>&nbsp | &nbsp<a href="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/README_zh.md">简体中文</a>
+</p>
+
+<!-- <p align="center">
+  <img src="https://cdn-uploads.huggingface.co/production/uploads/651a29d566e78720a78317ec/I2rqZ19OY2qvW1V6nOakg.png" width="400"/>
+</p>
+
+<p align="center">
+ 📄 <a href="https://arxiv.org/abs/2407.18743"> 报告 </a>&nbsp | &nbsp 💻 <a href="https://github.com/RUC-GSAI/Llama-3-SynE">GitHub 仓库</a>
+</p>
+
+<p align="center">
+ 🔍 <a href="https://huggingface.co/survivi/Llama-3-SynE/blob/main/README.md">English</a>&nbsp | &nbsp<a href="https://huggingface.co/survivi/Llama-3-SynE/blob/main/README_zh.md">简体中文</a>
+</p>
+
+> 这里是 Llama-3-SynE 模型，我们也开源了 [继续预训练数据集](https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset)。 -->
+
+<!-- <p align="center">
+  <img src="https://cdn-uploads.huggingface.co/production/uploads/651a29d566e78720a78317ec/I2rqZ19OY2qvW1V6nOakg.png" width="400"/>
+</p>
+
+<p align="center">
+ 📄 <a href="https://arxiv.org/abs/2407.18743"> 报告 </a>&nbsp | &nbsp 💻 <a href="https://github.com/RUC-GSAI/Llama-3-SynE">GitHub 仓库</a>
+</p>
+
+<p align="center">
+ 🔍 <a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset/blob/main/README.md">English</a>&nbsp | &nbsp<a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset/blob/main/README_zh.md">简体中文</a>
+</p>
+
+> 这里是继续预训练数据集，我们也开源了 [Llama-3-SynE 模型](https://huggingface.co/survivi/Llama-3-SynE). -->
+
+---
 
 ## 更新
 
+- ✨✨ `2024/08/12`: 我们发布了 [继续预训练数据集](https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset)。
 - ✨✨ `2024/08/10`: 我们发布了 [Llama-3-SynE 模型](https://huggingface.co/survivi/Llama-3-SynE)。
 - ✨ `2024/07/26`: 我们发布了 Llama-3-SynE 的 [技术报告](https://arxiv.org/abs/2407.18743)，欢迎查阅！
 
@@ -30,7 +77,7 @@ Llama-3-SynE 的主要特点包括：
 ## 模型列表
 
 | 模型         | 类型 | 序列长度 | 下载                                                          |
-| ------------ | ---- | -------- | ------------------------------------------------------------- |
+| :----------- | :--- | :------- | :------------------------------------------------------------ |
 | Llama-3-SynE | Base | 8K       | [🤗 Huggingface](https://huggingface.co/survivi/Llama-3-SynE) |
 
 ## 基准测试
@@ -45,7 +92,7 @@ Llama-3-SynE 的主要特点包括：
 ### 主要基准
 
 | **模型**                | **MMLU**  | **C-Eval** | **CMMLU** | **MATH**  | **GSM8K** | **ASDiv** | **MAWPS** | **SAT-Math** | **HumanEval** | **MBPP**  |
-| ----------------------- | --------- | ---------- | --------- | --------- | --------- | --------- | --------- | ------------ | ------------- | --------- |
+| :---------------------- | :-------- | :--------- | :-------- | :-------- | :-------- | :-------- | :-------- | :----------- | :------------ | :-------- |
 | Llama-3-8B              | **66.60** | 49.43      | 51.03     | 16.20     | 54.40     | 72.10     | 89.30     | 38.64        | _36.59_       | **47.00** |
 | DCLM-7B                 | 64.01     | 41.24      | 40.89     | 14.10     | 39.20     | 67.10     | 83.40     | _41.36_      | 21.95         | 32.60     |
 | Mistral-7B-v0.3         | 63.54     | 42.74      | 43.72     | 12.30     | 40.50     | 67.50     | 87.50     | 40.45        | 25.61         | 36.00     |
@@ -63,7 +110,7 @@ Llama-3-SynE 的主要特点包括：
 “PHY”、“CHE” 和 “BIO” 分别表示对应基准的物理、化学和生物子任务。
 
 | **模型**                | **SciEval PHY** | **SciEval CHE** | **SciEval BIO** | **SciEval Avg.** | **SciQ**  | **GaoKao MathQA** | **GaoKao CHE** | **GaoKao BIO** | **ARC Easy** | **ARC Challenge** | **ARC Avg.** | **AQUA-RAT** |
-| ----------------------- | --------------- | --------------- | --------------- | ---------------- | --------- | ----------------- | -------------- | -------------- | ------------ | ----------------- | ------------ | ------------ |
+| :---------------------- | :-------------- | :-------------- | :-------------- | :--------------- | :-------- | :---------------- | :------------- | :------------- | :----------- | :---------------- | :----------- | :----------- |
 | Llama-3-8B              | 46.95           | 63.45           | 74.53           | 65.47            | 90.90     | 27.92             | 32.85          | 43.81          | 91.37        | 77.73             | 84.51        | _27.95_      |
 | DCLM-7B                 | **56.71**       | 64.39           | 72.03           | 66.25            | **92.50** | 29.06             | 31.40          | 37.14          | 89.52        | 76.37             | 82.94        | 20.08        |
 | Mistral-7B-v0.3         | 48.17           | 59.41           | 68.89           | 61.51            | 89.40     | 30.48             | 30.92          | 41.43          | 87.33        | 74.74             | 81.04        | 23.23        |

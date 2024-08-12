@@ -1,19 +1,66 @@
-# Llama-3-SynE
+<!-- ---
+language:
+- en
+- zh
+datasets:
+- survivi/Llama-3-SynE-Dataset
+library_name: transformers
+pipeline_tag: text-generation
+--- -->
 
-<div align="center">
-<img src="./assets/llama-3-syne-logo.png" width="200"/>
-</div>
+<!-- ---
+language:
+- en
+- zh
+task_categories:
+- text-generation
+--- -->
 
 <p align="center">
- 📄<a href="https://arxiv.org/abs/2407.18743" target="_blank"> Report </a> • 🤗 <a href="https://huggingface.co/survivi/Llama-3-SynE" target="_blank">HF Repo</a>
+  <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/llama-3-syne-logo.png" width="400"/>
 </p>
 
 <p align="center">
- 🔍<a href="README_zh.md" target="_blank">中文</a>
+ 📄 <a href="https://arxiv.org/abs/2407.18743"> Report </a>&nbsp | &nbsp 🤗 <a href="https://huggingface.co/survivi/Llama-3-SynE">Model on Hugging Face</a>&nbsp | &nbsp 📊 <a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset">CPT Dataset</a>
 </p>
+
+<p align="center">
+ 🔍 <a href="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/README.md">English</a>&nbsp | &nbsp<a href="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/README_zh.md">简体中文</a>
+</p>
+
+<!-- <p align="center">
+  <img src="https://cdn-uploads.huggingface.co/production/uploads/651a29d566e78720a78317ec/I2rqZ19OY2qvW1V6nOakg.png" width="400"/>
+</p>
+
+<p align="center">
+ 📄 <a href="https://arxiv.org/abs/2407.18743"> Report </a>&nbsp | &nbsp 💻 <a href="https://github.com/RUC-GSAI/Llama-3-SynE">GitHub Repo</a>
+</p>
+
+<p align="center">
+ 🔍 <a href="https://huggingface.co/survivi/Llama-3-SynE/blob/main/README.md">English</a>&nbsp | &nbsp<a href="https://huggingface.co/survivi/Llama-3-SynE/blob/main/README_zh.md">简体中文</a>
+</p>
+
+> Here is the Llama-3-SynE model. The continual pre-training dataset is also available [here](https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset). -->
+
+<!-- <p align="center">
+  <img src="https://cdn-uploads.huggingface.co/production/uploads/651a29d566e78720a78317ec/I2rqZ19OY2qvW1V6nOakg.png" width="400"/>
+</p>
+
+<p align="center">
+ 📄 <a href="https://arxiv.org/abs/2407.18743"> Report </a>&nbsp | &nbsp 💻 <a href="https://github.com/RUC-GSAI/Llama-3-SynE">GitHub Repo</a>
+</p>
+
+<p align="center">
+ 🔍 <a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset/blob/main/README.md">English</a>&nbsp | &nbsp<a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset/blob/main/README_zh.md">简体中文</a>
+</p>
+
+> Here is the continual pre-training dataset. The Llama-3-SynE model is available [here](https://huggingface.co/survivi/Llama-3-SynE). -->
+
+---
 
 ## News
 
+- ✨✨ `2024/08/12`: We released the [continual pre-training dataset](https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset).
 - ✨✨ `2024/08/10`: We released the [Llama-3-SynE model](https://huggingface.co/survivi/Llama-3-SynE).
 - ✨ `2024/07/26`: We released the [technical report](https://arxiv.org/abs/2407.18743), welcome to check it out!
 
@@ -30,7 +77,7 @@ Key features of Llama-3-SynE include:
 ## Model List
 
 | Model        | Type | Seq Length | Download                                                      |
-| ------------ | ---- | ---------- | ------------------------------------------------------------- |
+| :----------- | :--- | :--------- | :------------------------------------------------------------ |
 | Llama-3-SynE | Base | 8K         | [🤗 Huggingface](https://huggingface.co/survivi/Llama-3-SynE) |
 
 ## BenchMark
@@ -45,7 +92,7 @@ For HumanEval and ARC, we report the zero-shot evaluation performance. The best 
 ### Major Benchmarks
 
 | **Models**              | **MMLU**         | **C-Eval**       | **CMMLU**        | **MATH**         | **GSM8K**        | **ASDiv**        | **MAWPS**        | **SAT-Math**     | **HumanEval**    | **MBPP**         |
-| ----------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
+| :---------------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- |
 | Llama-3-8B              | **66.60**        | 49.43            | 51.03            | 16.20            | 54.40            | 72.10            | 89.30            | 38.64            | <ins>36.59</ins> | **47.00**        |
 | DCLM-7B                 | 64.01            | 41.24            | 40.89            | 14.10            | 39.20            | 67.10            | 83.40            | <ins>41.36</ins> | 21.95            | 32.60            |
 | Mistral-7B-v0.3         | 63.54            | 42.74            | 43.72            | 12.30            | 40.50            | 67.50            | 87.50            | 40.45            | 25.61            | 36.00            |
@@ -63,7 +110,7 @@ For HumanEval and ARC, we report the zero-shot evaluation performance. The best 
 "PHY", "CHE", and "BIO" denote the physics, chemistry, and biology sub-tasks of the corresponding benchmarks.
 
 | **Models**              | **SciEval PHY**  | **SciEval CHE**  | **SciEval BIO**  | **SciEval Avg.** | **SciQ**         | **GaoKao MathQA** | **GaoKao CHE**   | **GaoKao BIO**   | **ARC Easy**     | **ARC Challenge** | **ARC Avg.**     | **AQUA-RAT**     |
-| ----------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ----------------- | ---------------- | ---------------- | ---------------- | ----------------- | ---------------- | ---------------- |
+| :---------------------- | :--------------- | :--------------- | :--------------- | :--------------- | :--------------- | :---------------- | :--------------- | :--------------- | :--------------- | :---------------- | :--------------- | :--------------- |
 | Llama-3-8B              | 46.95            | 63.45            | 74.53            | 65.47            | 90.90            | 27.92             | 32.85            | 43.81            | 91.37            | 77.73             | 84.51            | <ins>27.95</ins> |
 | DCLM-7B                 | **56.71**        | 64.39            | 72.03            | 66.25            | **92.50**        | 29.06             | 31.40            | 37.14            | 89.52            | 76.37             | 82.94            | 20.08            |
 | Mistral-7B-v0.3         | 48.17            | 59.41            | 68.89            | 61.51            | 89.40            | 30.48             | 30.92            | 41.43            | 87.33            | 74.74             | 81.04            | 23.23            |
