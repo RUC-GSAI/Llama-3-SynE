@@ -60,10 +60,14 @@ task_categories:
 
 ## News
 
-- 🌟 **Training and evaluation code coming soon:)**
+- 🌟🌟 `2024/12/17`: We released the [code](https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/src) used for continual pre-training and data preparation. The code contains detailed documentation comments.
 - ✨✨ `2024/08/12`: We released the [continual pre-training dataset](https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset).
 - ✨✨ `2024/08/10`: We released the [Llama-3-SynE model](https://huggingface.co/survivi/Llama-3-SynE).
 - ✨ `2024/07/26`: We released the [technical report](https://arxiv.org/abs/2407.18743), welcome to check it out!
+
+<p align="center">
+  <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/pipeline.png" width="600"/>
+</p>
 
 ## Model Introduction
 
