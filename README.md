@@ -65,8 +65,10 @@ task_categories:
 - ✨✨ `2024/08/10`: We released the [Llama-3-SynE model](https://huggingface.co/survivi/Llama-3-SynE).
 - ✨ `2024/07/26`: We released the [technical report](https://arxiv.org/abs/2407.18743), welcome to check it out!
 
+<br>
+
 <p align="center">
-  <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/pipeline.png" width="600"/>
+  <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/pipeline.png" width="800"/>
 </p>
 
 ## Model Introduction
