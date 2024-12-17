@@ -60,9 +60,16 @@ task_categories:
 
 ## 更新
 
+- 🌟🌟 `2024/12/17`: 我们发布了用于继续预训练和数据准备的 [代码](https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/src)，代码中包含详尽的文档注释。
 - ✨✨ `2024/08/12`: 我们发布了 [继续预训练数据集](https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset)。
 - ✨✨ `2024/08/10`: 我们发布了 [Llama-3-SynE 模型](https://huggingface.co/survivi/Llama-3-SynE)。
 - ✨ `2024/07/26`: 我们发布了 Llama-3-SynE 的 [技术报告](https://arxiv.org/abs/2407.18743)，欢迎查阅！
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/pipeline.png" width="800"/>
+</p>
 
 ## 模型介绍
 
