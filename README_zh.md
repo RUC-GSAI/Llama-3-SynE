@@ -16,9 +16,11 @@ task_categories:
 - text-generation
 --- -->
 
+<!-- ---
 <p align="center">
   <img src="https://github.com/RUC-GSAI/Llama-3-SynE/blob/main/assets/llama-3-syne-logo.png" width="400"/>
 </p>
+--- -->
 
 <p align="center">
  📄 <a href="https://arxiv.org/abs/2407.18743"> 报告 </a>&nbsp | &nbsp 🤗 <a href="https://huggingface.co/survivi/Llama-3-SynE">Hugging Face 上的模型</a>&nbsp | &nbsp 📊 <a href="https://huggingface.co/datasets/survivi/Llama-3-SynE-Dataset">继续预训练数据集</a>
